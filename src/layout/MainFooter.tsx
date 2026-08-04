@@ -11,9 +11,9 @@ export const MainFooter = () => {
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
 							stroke="currentColor"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							strokeWidth="2"
 							className="w-10 h-10 text-gray-400 p-2 bg-gray-200 rounded-full"
 							viewBox="0 0 24 24"
 						>
@@ -143,9 +143,9 @@ export const MainFooter = () => {
 						<a className="text-gray-500" href="/">
 							<svg
 								fill="currentColor"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth="2"
 								className="w-5 h-5"
 								viewBox="0 0 24 24"
 							>
@@ -157,9 +157,9 @@ export const MainFooter = () => {
 							<svg
 								fill="none"
 								stroke="currentColor"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth="2"
 								className="w-5 h-5"
 								viewBox="0 0 24 24"
 							>
@@ -172,9 +172,9 @@ export const MainFooter = () => {
 							<svg
 								fill="currentColor"
 								stroke="currentColor"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="0"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth="0"
 								className="w-5 h-5"
 								viewBox="0 0 24 24"
 							>
