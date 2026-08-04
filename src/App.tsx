@@ -1,12 +1,17 @@
 import { Route, Routes } from "react-router";
 import "./App.css";
+
+import { MainNavigation } from "./layout/MainNavigation";
 import { Home } from "./pages/Home";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
+    <>
+      <MainNavigation />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </>
   );
 }
 
