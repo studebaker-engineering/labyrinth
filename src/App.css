@@ -1,22 +1,107 @@
 @import "tailwindcss";
 
+@theme {
+	--color-soft-blue: #b0b0ba;
+	--color-dark-blue: #29709b;
+	--color-powder-red: #ad412a;
+	--color-creme: #f5f0e4;
+}
+
+/* Arial Narrow */
+@font-face {
+	font-family: "Arial Narrow";
+	src: url("https://media.studebaker.engineering/fonts/arial-narrow/arialnarrow.woff2")
+		format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Brush Script */
+@font-face {
+	font-family: "Brush Script MT";
+	size-adjust: 140%;
+	src: url("https://media.studebaker.engineering/fonts/Brush%20Script.woff2")
+		format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* NeueBit */
+@font-face {
+	font-family: "PP NeueBit";
+	size-adjust: 150%;
+	src: url("https://media.studebaker.engineering/fonts/PPNeueBit-Bold.woff2")
+		format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Editorial */
+@font-face {
+	font-family: "PP Editorial Old";
+	src: url("https://media.studebaker.engineering/fonts/editorial-old/PPEditorialOld-Regular.woff2")
+		format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "PP Editorial Old";
+	src: url("https://media.studebaker.engineering/fonts/editorial-old/PPEditorialOld-Italic.woff2")
+		format("woff2");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
 @layer base {
-  h1 {
-    @apply text-4xl font-bold;
-  }
-  h2 {
-    @apply text-3xl font-bold;
-  }
-  h3 {
-    @apply text-2xl font-semibold;
-  }
-  h4 {
-    @apply text-xl font-semibold;
-  }
-  h5 {
-    @apply text-lg font-medium;
-  }
-  h6 {
-    @apply text-base font-medium;
-  }
+	h1 {
+		@apply text-4xl font-bold;
+	}
+	h2 {
+		@apply text-3xl font-bold;
+	}
+	h3 {
+		@apply text-2xl font-semibold;
+	}
+	h4 {
+		@apply text-xl font-semibold;
+	}
+	h5 {
+		@apply text-lg font-medium;
+	}
+	h6 {
+		@apply text-base font-medium;
+	}
+}
+
+p {
+	font-family: "Arial Narrow", sans-serif;
+	font-weight: 400;
+	-webkit-text-stroke: 1px;
+}
+
+.font-brush {
+	font-family: "Brush Script MT", cursive, sans-serif;
+	font-weight: 400;
+}
+
+.font-pixel {
+	font-family: "PP NeueBit", serif;
+	font-weight: 700;
+}
+
+.font-editorial {
+	font-family: "PP Editorial Old", serif;
+	font-weight: 400;
+}
+
+.font-narrow {
+	font-family: "Arial Narrow", sans-serif;
+	font-weight: 400;
+	-webkit-text-stroke: 1px;
 }

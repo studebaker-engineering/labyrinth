@@ -154,26 +154,12 @@ export const MainNavigation = () => {
 	}, [isMobileMenuOpen]);
 
 	return (
-		<header className="text-gray-600 body-font">
-			<div className="container mx-auto flex items-center justify-between px-3 py-5 md:px-5">
-				<a
-					className="flex title-font font-medium items-center text-gray-900"
-					href="/"
-				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						stroke="currentColor"
-						strokeLinecap="round"
-						strokeLinejoin="round"
-						strokeWidth="2"
-						className="w-10 h-10 text-gray-400 p-2 bg-gray-200 rounded-full"
-						viewBox="0 0 24 24"
-					>
-						<title>App Icon</title>
-						<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-					</svg>
-					<span className="ml-3 text-xl">Studebaker Engineering</span>
+		<header className="bg-dark-blue text-soft-blue font-narrow h-[8vh]">
+			<div className="mx-3 flex items-center justify-between p-3">
+				<a className="" href="/">
+					<span className="ml-3 text-xl font-editorial">
+						Studebaker Engineering
+					</span>
 				</a>
 
 				<div className="hidden md:flex md:items-center">
