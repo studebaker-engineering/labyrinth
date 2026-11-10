@@ -31,7 +31,10 @@
 /* NeueBit */
 @font-face {
 	font-family: "PP NeueBit";
-	size-adjust: 150%;
+	/* Match Editorial's line metrics at .font-pixel's 1.6em font size. */
+	ascent-override: 68.75%;
+	descent-override: 18.75%;
+	line-gap-override: 6.25%;
 	src: url("https://media.studebaker.engineering/fonts/PPNeueBit-Bold.woff2")
 		format("woff2");
 	font-weight: 700;
@@ -93,6 +96,10 @@ p {
 .font-pixel {
 	font-family: "PP NeueBit", serif;
 	font-weight: 700;
+	/* Match Editorial's 0.8em cap height to NeueBit's 0.5em cap height. */
+	font-size: 1.6em;
+	/* Preserve the surrounding text's 1em line box at the larger font size. */
+	line-height: 0.625;
 }
 
 .font-editorial {
