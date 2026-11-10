@@ -41,10 +41,10 @@ Planned sitemap: Home, Work, Services, Studio, Contact.
 ## Observed: current implementation
 
 - npm-managed React/TypeScript SPA built with Vite; React Router for routes, Tailwind 4 utilities/CSS tokens, GSAP for animation, Biome for lint and formatting. No backend, CMS, contact integration, or deployment configuration is present in the repository.
-- `src/main.tsx` → BrowserRouter → `src/App.tsx` → shared navigation, route content, shared footer. Only Home (`/`) exists.
+- `src/main.tsx` → BrowserRouter → `src/App.tsx` → shared navigation, route content, shared footer. Home (`/`), Work (`/work`), Services (`/services`), Studio (`/studio`), and Contact (`/contact`) are registered. On 2026-11-10, the four new views were scaffolded, then given page-name HeroSection components and section barrels. The existing Home hero was extracted into its own section.
 - Home includes a screen-reader h1, two decorative curved SVG wordmark lines via `ArcText`, mixed-font oval tagline, and service labels. A cream/red “Lorem Ipsum” section and commented prototype content follow.
 - Existing hero labels are Web Development, Brand Identity, Digital Design, and Copywriting. These differ from the newly supplied core offerings; their future role is undecided.
-- Desktop and mobile navigation link to `/work`, `/services`, `/studio`, `/contact`, but none has a route. No catch-all route exists. Internal links are plain anchors and reload the document.
+- Desktop and mobile navigation link to the four registered heading-only views. No catch-all route exists. Internal links are plain anchors and reload the document.
 - Mobile overlay animates with GSAP and locks body scrolling. It retains generic template icon, “Fourth Link” submenu, and “Button” content. Footer is empty.
 - `EntranceText` is an unused GSAP SplitText/ScrollTrigger prototype with placeholder copy.
 - Layout uses Tailwind containers, flex, max widths, responsive `md:`/`lg:` utilities, SVG viewBox scaling, negative margins, and viewport-height sizing. No custom breakpoints are configured.
@@ -54,6 +54,7 @@ Planned sitemap: Home, Work, Services, Studio, Contact.
 
 ## Confirmed: working decisions
 
+- Pages are top-level view components in `src/pages/`; sections are separate composable components in `src/sections/<page>/`. Shared components belong in `src/components/`; site-wide shell components remain in `src/layout/`. Each page has a HeroSection exported through its section directory barrel; the Home hero has been extracted. The shared directory under sections was removed; keep shared components in `src/components/`.
 - Preserve and extend the existing visual identity incrementally.
 - Complete audit/documentation before homepage implementation; this onboarding does not authorize implementing the proposed homepage.
 - Avoid unnecessary dependencies and broad refactors; use the existing stack and conventions.
@@ -61,7 +62,7 @@ Planned sitemap: Home, Work, Services, Studio, Contact.
 
 ## Concerns to address incrementally
 
-- Unimplemented navigation destinations, placeholder content, and empty footer prevent a complete visitor journey.
+- Heading-only destination views, placeholder homepage content, and empty footer prevent a complete visitor journey.
 - Mobile navigation needs brand alignment and accessibility review: no explicit focus trap/restore, Escape handler, or reduced-motion behavior. Resizing an open menu to desktop can leave body scrolling locked.
 - Viewport-height sections, large/stroked text, overlaps, and remote-font swaps require responsive, zoom, contrast, and loading checks. Exact palette accessibility has not been measured.
 - `ArcText` measures once and after font readiness; dynamic prop changes would need remeasurement. Retain its accessible heading counterpart.

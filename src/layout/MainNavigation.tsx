@@ -3,9 +3,10 @@ import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 
 const NAV_LINKS = [
-	{ label: "First Link", href: "/" },
-	{ label: "Second Link", href: "/" },
-	{ label: "Third Link", href: "/" },
+	{ label: "Work", href: "/work" },
+	{ label: "Services", href: "/services" },
+	{ label: "Studio", href: "/studio" },
+	{ label: "Contact", href: "/contact" },
 ];
 
 const FOURTH_LINK_ITEMS = [
@@ -173,28 +174,10 @@ export const MainNavigation = () => {
 								{link.label}
 							</a>
 						))}
-						<div className="mr-5">
+						{/* <div className="mr-5">
 							<FourthLinkMenu variant="popover" />
-						</div>
+						</div> */}
 					</nav>
-					<button
-						className="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base"
-						type="button"
-					>
-						Button
-						<svg
-							fill="none"
-							stroke="currentColor"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							strokeWidth="2"
-							className="w-4 h-4 ml-1"
-							viewBox="0 0 24 24"
-						>
-							<title>Arrow Icon</title>
-							<path d="M5 12h14M12 5l7 7-7 7"></path>
-						</svg>
-					</button>
 				</div>
 
 				<button
