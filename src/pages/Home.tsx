@@ -9,17 +9,15 @@ import {
 
 export const Home = () => (
 	<>
-		<div className="container mx-auto px-3">
-			<HeroSection />
-			<PitchSection />
-			<SelectedWorkSection />
-			<WhatWeDoSection />
-			<PartnershipSection />
-			<ContactCTASection />
-		</div>
+		<HeroSection />
 
 		<div className="min-h-dvh bg-creme text-powder-red">
 			<div className="container mx-auto py-5">
+				<PitchSection />
+				<SelectedWorkSection />
+				<WhatWeDoSection />
+				<PartnershipSection />
+				<ContactCTASection />
 				<h2 className="font-brush text-5xl">Lorem Ipsum</h2>
 			</div>
 		</div>

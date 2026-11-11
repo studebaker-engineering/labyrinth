@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+:root {
+	--navigation-height: 4.5rem;
+}
+
 @theme {
 	--color-soft-blue: #b0b0ba;
 	--color-dark-blue: #29709b;

@@ -1,8 +1,8 @@
 import { ArcText } from "@/components/ArcText";
 
 export const HeroSection = () => (
-	<section>
-		<div className="container h-[82vh]">
+	<section className="min-h-svh w-full px-3 pt-[calc(var(--navigation-height)+1rem)] pb-6">
+		<div className="container mx-auto">
 			{/* Screen reader heading */}
 			<h1 className="sr-only">Studebaker Engineering</h1>
 			{/* Arc text */}
@@ -17,19 +17,25 @@ export const HeroSection = () => (
 			{/* Tag */}
 			<div className="flex justify-center">
 				<div className="border-2 border-soft-blue w-fit px-8 py-1 lg:py-2 rounded-[200%]">
-					<p className="font-editorial text-2xl lg:text-4xl leading-none italic">
+					<p className="font-editorial text-2xl lg:text-5xl leading-none italic">
 						"Your <span className="font-pixel not-italic">Digital</span> Friend"
 					</p>
 				</div>
 			</div>
 			{/* Description */}
+			<div className="text-center mt-3 text-2xl lg:text-4xl text-balance">
+				<p className="font-editorial">
+					Creative and technical partnership for independent brands
+				</p>
+			</div>
+
 			<div className="flex justify-between items-center text-2xl lg:text-3xl uppercase mt-3 mx-auto max-w-5xl px-5">
 				<div>
-					<p>Web Development</p>
+					<p>Development</p>
 					<p>Brand Identity</p>
 				</div>
 				<div className="text-right">
-					<p>Digital Design</p>
+					<p>Design</p>
 					<p>Copywriting</p>
 				</div>
 			</div>

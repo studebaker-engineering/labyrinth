@@ -9,7 +9,7 @@ import {
 } from "@/sections/studio";
 
 export const Studio = () => (
-	<div className="container mx-auto px-3">
+	<div className="container mx-auto px-3 pt-[calc(var(--navigation-height)+1rem)]">
 		<HeroSection />
 		<IntroductionSection />
 		<OurPhilosophySection />

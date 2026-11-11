@@ -155,8 +155,8 @@ export const MainNavigation = () => {
 	}, [isMobileMenuOpen]);
 
 	return (
-		<header className="bg-dark-blue text-soft-blue font-narrow h-[8vh]">
-			<div className="mx-3 flex items-center justify-between p-3">
+		<header className="absolute inset-x-0 top-0 z-40 text-soft-blue font-narrow h-(--navigation-height)">
+			<div className="mx-3 flex h-full items-center justify-between p-3">
 				<a className="" href="/">
 					<span className="ml-3 text-xl font-editorial">
 						Studebaker Engineering
